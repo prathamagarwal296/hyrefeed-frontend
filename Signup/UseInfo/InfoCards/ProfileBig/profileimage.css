@@ -1,0 +1,65 @@
+.user-profile-pic{
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid var(--grey-shade-three);
+    position: relative;
+    justify-self: center;
+}
+.user-profile-inner{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:  var(--grey-shade-two);
+}
+#edit-userpic{
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#edit-userpic input{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .user-profile-pic{
+        width: 6.7rem;
+        height: 6.7rem;
+        justify-self: flex-start;
+    }
+    .user-profile-inner{
+        width: 5rem;
+        height: 5rem;
+    }
+    .user-profile-inner svg{
+        width: 2.5rem;
+        height: 2rem;
+    }
+    .user-profile-inner img{
+        width: 2.5rem;
+        height: 2rem;
+    }
+    #edit-userpic{
+        width: 2.4rem;
+        height: 2.4rem;
+        right: -0.5rem;
+        bottom: -0.4rem;
+    }
+    #edit-userpic svg{
+        width: 1.3rem;
+        height: 1.2rem;
+    }
+}

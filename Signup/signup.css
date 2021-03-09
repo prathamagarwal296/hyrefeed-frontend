@@ -1,0 +1,347 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  background-color: #000000;
+}
+.image-holder {
+  background-image: linear-gradient(
+      rgba(66, 66, 66, 0.74),
+      rgba(66, 66, 66, 0.74)
+    ),
+    url("./assets/Mask Group 52.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.signup-form {
+  justify-self: center;
+  align-self: center;
+  width: 65%;
+  background-color: #181818;
+  padding: 3rem 3rem;
+  border-radius: 15px;
+}
+.text-signup {
+  padding: 1rem 3rem 2rem 0rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 0rem;
+}
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.form-input {
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  background-color: #313131;
+  border-width: 0px;
+  color: #6b6b6b;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #008077;
+}
+::placeholder {
+  color: #6b6b6b;
+}
+.text {
+  margin: 3.5rem 3rem;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #707070;
+}
+.btn {
+  background-color: var(--primary-dark);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-width: 0;
+}
+.heading-primary {
+  color: white;
+  font-size: 5rem;
+  line-height: 1;
+}
+.heading-secondary {
+  font-size: 2rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+.heading {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+}
+.date {
+  position: relative;
+}
+.calender {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 12px;
+  right: 25px;
+}
+input[type="date"] {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1.1rem 2rem;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: 1.7rem;
+  color: white;
+  z-index: 200;
+  opacity: 0;
+}
+.form-group-2 {
+  margin-bottom: 1rem;
+}
+.form-group-2:last-child {
+  margin-top: 2rem;
+}
+.form input[type="file"] {
+  display: none;
+}
+.file-upload {
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  background-color: #313131;
+  border-width: 0px;
+  color: #6b6b6b;
+  position: relative;
+}
+.file-name {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: 400;
+}
+.login-link {
+  color: white;
+  margin-left: 0.5rem;
+}
+.login-mobile-formtwo {
+  display: none;
+}
+
+.form-otp-input {
+  font-size: 2.8rem;
+  font-weight: bold;
+  width: 14%;
+  height: 7rem;
+  text-align: center;
+  background-color: rgba(65, 65, 65, 0.712);
+  border: 2px solid var(--grey-light);
+  border-radius: 1rem;
+  color: #c0c0c0;
+}
+.form-otp-input::-webkit-outer-spin-button,
+.form-otp-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-otp-input::placeholder {
+  color: var(--grey-light);
+}
+.form-otp-group {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.form-otp-group input {
+  width: 13%;
+}
+#otp-header {
+  font-size: 2.4rem;
+  padding: 1rem 1rem;
+}
+#otp-tag {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+}
+#otp-resend {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+  padding: 0rem;
+  color: #d5d5d5;
+}
+#login-phone {
+  color: var(--grey);
+  font-size: 2rem;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translate(00%, -51%);
+  pointer-events: none;
+}
+#login-area {
+  padding: 0.25rem 0.5rem 0.25rem 0rem;
+  margin-right: 0.7rem;
+  border-right: 3px solid var(--primary-dark);
+  color: white;
+}
+#otp-header {
+  font-size: 3.2rem;
+}
+#otp-tag {
+  font-size: 1.8rem;
+}
+#otp-resend {
+  font-size: 1.4rem;
+}
+#login-phonenumber {
+  padding-left: 6.8rem;
+  color: aliceblue;
+}
+#resend-otp-click {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+#input-error-phno {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 110%;
+  left: 1rem;
+  color: #f17777;
+}
+.btn-login {
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(
+        rgba(66, 66, 66, 0.74),
+        rgba(66, 66, 66, 0.74)
+      ),
+      url("./assets/laptop-1209008_1280.svg");
+    background-position: 65% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .image-holder {
+    display: none;
+  }
+  .signup-form {
+    width: 90%;
+    background-color: rgba(24, 24, 24, 0.9);
+    padding: 2rem 1.8rem;
+    border-radius: 2.5rem;
+  }
+  .text-signup {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 1.6rem;
+    margin: 2rem 3rem;
+  }
+  .form-input {
+    font-size: 1.6rem;
+  }
+  .file-upload {
+    font-size: 1.4rem;
+  }
+  input[type="date"] {
+    font-size: 1.8rem;
+  }
+  .login-formtwo {
+    display: none;
+  }
+  .login-mobile-formtwo {
+    display: block;
+  }
+  .form-otp-input {
+    font-size: 2.6rem;
+    font-weight: bold;
+    width: 4.8rem;
+    height: 5.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .form-otp-input::placeholder {
+    color: #c0c0c0;
+  }
+  .form-otp-group {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  #otp-header {
+    font-size: 2.4rem;
+    padding: 1rem 1rem;
+  }
+  #otp-tag {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+  #otp-resend {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    color: #d5d5d5;
+  }
+  #login-phone {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(
+        rgba(66, 66, 66, 0.74),
+        rgba(66, 66, 66, 0.74)
+      ),
+      url("./assets/laptop-1209008_1280.svg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .image-holder {
+    display: none;
+  }
+  .heading {
+    width: 90%;
+  }
+  .signup-form {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .signup-form {
+    width: 80%;
+  }
+  .heading-primary {
+    font-size: 6rem;
+  }
+  .heading {
+    width: 90%;
+  }
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
+}

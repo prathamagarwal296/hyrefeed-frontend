@@ -1,0 +1,128 @@
+.user-profile{
+    position: relative;
+}
+.user-info{
+    background-color: var(--black);
+    width: 100%;
+    padding-bottom: 18rem;
+}
+.linkedIn-popup{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-60%);
+    z-index: 100;
+    background-color: #313030;
+    padding: 2rem 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1.5rem;
+    animation: linkedIn 300ms;
+}
+.linkedIn-popup h1{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.linkedIn-popup h4{
+    font-size: 2rem;
+    color: #707070;
+    margin-bottom: 1rem;
+}
+.linkedIn-popup ol{
+    margin-left: 3rem;
+    color: #707070;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.linkedIn-popup p{
+    color:#FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+.btn-linkedIn{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 0rem auto 0rem auto;
+    background-color: #0A66C2;
+    cursor: pointer;
+}
+.btn-linkedIn div{
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 0.2rem;
+}
+.btn-linkedIn div svg{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.btn-green{
+    display: block;
+    padding: 1rem 0rem;
+    font-size: 1.8rem;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5rem;
+    margin: 1rem auto 0.5rem auto;
+    cursor: pointer;
+}
+.profile-logo-mobile{
+    display: none;
+}
+@keyframes linkedIn {
+    0%{
+        opacity: 0;
+        transform: translate(-50%,-60%) scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform:translate(-50%,-60%) scale(1);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .linkedIn-popup{
+        width: 90%;
+        position: fixed;
+        top:55%;
+        left:50%;
+        padding: 2rem 2rem;
+    }
+    .linkedIn-popup h1{
+        font-size: 1.8rem;
+    }
+    .linkedIn-popup h4{
+        font-size: 1.3rem;
+    }
+    .linkedIn-popup ol{
+        font-size: 1.3rem;
+    }
+    .linkedIn-popup p{
+        font-size: 1.3rem;
+    }
+    .btn-linkedIn{
+        font-size: 1.1rem;
+    }
+    .btn-green{
+        font-size: 1.1rem;
+    }
+    .btn-linkedIn div svg{
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    #user-info-header{
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    .profile-logo-mobile{
+        display: block;
+        padding: 1.5rem 3rem 0rem 3rem;
+    }
+}

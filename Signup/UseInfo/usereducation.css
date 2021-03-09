@@ -1,0 +1,147 @@
+.education-gird{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 9rem;
+    overflow: hidden;
+}
+.userEducation-header{
+    color: white;
+    font-size: 2rem;
+    margin:1rem 2rem;
+    font-weight: 500;
+}
+.educationInfo-top{
+    width: 90%;
+    background-color: var(--grey-shade-one);
+    justify-self: center;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+.education-inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr 3fr;
+}
+/*Custom Remove Button*/
+.removeedu{
+color: #DC1C13;
+background-color: transparent; 
+border: 2px solid #DC1C13; 
+border-radius: 5px; 
+text-transform: uppercase;
+}
+
+
+.certification-inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr 3fr;
+}
+.education-year{
+    width: 85%;
+    margin: 1.5rem 0rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.education-year label{
+    font-size: 1.7rem;
+    color: var(--gery-shade-four);
+}
+.education-year input{
+    font-size: 1.7rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border-width: 0rem;
+    background-color: var(--grey-shade-two);
+    width: 25%;
+    margin-right: 1rem;
+}
+#education-bacth{
+    width: 90%;
+    margin: 0.7rem auto;
+    padding-left: 1.5rem;
+}
+#education-yaer-text{
+    margin-right: 1rem;
+}
+.input-button{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 85%;
+    margin: 1.5rem 0rem 1.5rem 4rem;
+}
+.btn-add-file{
+    margin-top: 1rem;
+    justify-self: flex-start;
+    padding:1rem 1rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+}
+.profile-group-education{
+    width: 85%;
+    margin: 1.5rem 0rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+#profile-label-education{
+    padding-left: 1.5rem;
+    font-size: 1.7rem;
+    margin: 0.7rem auto;
+    width: 90%;
+}
+@media only screen and (max-width: 600px) {
+    .education-gird{
+        margin-left: 0;
+    }
+    .education-inputs{
+        width: 100%;
+    }
+    .educationInfo-top{
+        width: 95%;
+        padding: 1rem 0.5rem;
+    }
+    .education-year{
+        width: 100%;
+        grid-template-columns: 1fr 2.5fr;
+        align-items: center;
+        margin: 0;
+        padding: 0rem 1rem;
+    }
+    .education-year label{
+        font-size: 1rem;
+    }
+    .education-year input{
+        font-size: 1.1rem;
+    }
+    #education-bacth{
+        padding-left: 0.7rem;
+    }
+    .btn-add-file{
+        font-size: 1.1rem;
+    }
+    .input-button{
+        width: 100%;
+        grid-template-columns: 1fr 2.5fr;
+        margin: 0;
+        padding:0rem 1rem;
+    }
+    .profile-group-education{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 2.5fr;
+        padding: 0rem 1rem;
+    }
+    #profile-label-education{
+        font-size: 1rem;
+        padding-left: 0.7rem;
+    }
+    .userEducation-header{
+        margin: 1rem 0.7rem 1.5rem 0.7rem;
+    }
+    #ed-batch{
+        margin-top: 3.5rem;
+    }
+}
